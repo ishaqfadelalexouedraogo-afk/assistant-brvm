@@ -1,0 +1,11 @@
+{
+  "partenaires": [
+    {
+      "id": "demo",
+      "nom": "Démonstration",
+      "couleur": "#0b6e4f",
+      "quotaQuotidien": 30,
+      "messageAccueil": "Bienvenue sur la version de démonstration de l'Assistant BRVM."
+    }
+  ]
+}
