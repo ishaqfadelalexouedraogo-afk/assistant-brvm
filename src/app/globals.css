@@ -58,6 +58,7 @@ a { color: var(--accent); }
 h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(30px, 6vw, 48px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
 h1 em { font-style: normal; color: var(--accent); }
 h2 { font-family: var(--f-display); font-size: 20px; margin: 0; text-wrap: balance; }
+.slogan { margin: 10px 0 0; font-family: var(--f-display); font-weight: 600; font-size: clamp(18px, 3vw, 22px); color: var(--accent); }
 .intro { margin: 8px 0 0; color: var(--muted); max-width: 62ch; }
 .entete { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
 .compte { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }

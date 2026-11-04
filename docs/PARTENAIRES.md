@@ -1,6 +1,6 @@
 # Gérer les partenaires
 
-Un **partenaire** est une organisation qui offre l'Assistant BRVM à ses utilisateurs : une SGI à ses clients, une banque à ses épargnants, une école à ses étudiants. Ses utilisateurs se connectent avec un **code d'accès** propre au partenaire.
+Un **partenaire** est une organisation qui offre Wedra à ses utilisateurs : une SGI à ses clients, une banque à ses épargnants, une école à ses étudiants. Ses utilisateurs se connectent avec un **code d'accès** propre au partenaire.
 
 ## Ajouter un partenaire
 
@@ -14,7 +14,7 @@ Un **partenaire** est une organisation qui offre l'Assistant BRVM à ses utilisa
       "nom": "Démonstration",
       "couleur": "#0b6e4f",
       "quotaQuotidien": 30,
-      "messageAccueil": "Bienvenue sur la version de démonstration de l'Assistant BRVM."
+      "messageAccueil": "Bienvenue sur la version de démonstration de Wedra."
     },
     {
       "id": "ecole-finance-dakar",

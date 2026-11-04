@@ -52,4 +52,4 @@ export async function posterJson<T>(url: string, corps: unknown): Promise<T> {
 export const estAnnulation = (e: unknown) => e instanceof DOMException && e.name === "AbortError";
 
 /** Signale à l'en-tête qu'une demande a été consommée (mise à jour du compteur). */
-export const signalerConsommation = () => window.dispatchEvent(new Event("brvm:consommation"));
+export const signalerConsommation = () => window.dispatchEvent(new Event("wedra:consommation"));

@@ -1,8 +1,8 @@
 {
-  "name": "assistant-brvm",
+  "name": "wedra",
   "version": "0.1.0",
   "private": true,
-  "description": "Assistant IA de culture boursière et d'analyse financière pour la zone UEMOA (BRVM).",
+  "description": "Wedra : assistant IA de culture boursière et d'analyse financière pour la zone UEMOA (BRVM).",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

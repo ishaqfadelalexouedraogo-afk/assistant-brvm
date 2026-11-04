@@ -19,7 +19,7 @@ const SUGGESTIONS = [
   "Comment reconnaître une arnaque à l'investissement ?",
 ];
 
-const CLE_STOCKAGE = "brvm-chat-v1";
+const CLE_STOCKAGE = "wedra-chat-v1";
 const TAILLE_MAX_IMAGE = 5 * 1024 * 1024;
 
 function lireFichier(f: File): Promise<string> {
@@ -117,7 +117,7 @@ export default function Chat() {
     <div className="chat">
       <div className="messages">
         <div className="msg ia">
-          <span className="qui">Assistant</span>
+          <span className="qui">Wedra</span>
           <p>
             Bonjour. Je peux t&apos;expliquer le fonctionnement de la BRVM, t&apos;aider à lire les états financiers d&apos;une société
             cotée ou comparer des placements dans la zone UEMOA. Pose ta question, ou choisis-en une ci-dessous.
@@ -125,7 +125,7 @@ export default function Chat() {
         </div>
         {tours.map((t, i) => (
           <div key={i} className={`msg ${t.role === "user" ? "moi" : "ia"}${t.erreur ? " erreur" : ""}`}>
-            <span className="qui">{t.role === "user" ? "Toi" : "Assistant"}</span>
+            <span className="qui">{t.role === "user" ? "Toi" : "Wedra"}</span>
             {t.role === "user" ? (
               <p className="brut">{t.content}</p>
             ) : t.content ? (

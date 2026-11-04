@@ -1,6 +1,8 @@
-# Assistant BRVM
+# Wedra
 
-Assistant d'intelligence artificielle pour la zone UEMOA. Il sert à trois choses :
+**La bourse de l'UEMOA, expliquée simplement.**
+
+Wedra est un assistant d'intelligence artificielle pour la zone UEMOA. Il sert à trois choses :
 
 - **Discuter** : répondre aux questions sur la bourse et l'épargne dans la zone (BRVM, SGI, AMF-UMOA, titres publics, fiscalité…).
 - **Analyser une société** : calculer automatiquement 10 ratios financiers à partir du rapport annuel, puis les expliquer simplement.
@@ -8,7 +10,11 @@ Assistant d'intelligence artificielle pour la zone UEMOA. Il sert à trois chose
 
 Le service est vendu à des **partenaires** (SGI, banques, écoles, associations d'épargnants) qui l'offrent à leurs clients ou étudiants. Chaque partenaire a son code d'accès, sa couleur, son quota et son suivi de consommation.
 
-> L'assistant fait de la pédagogie, pas du conseil en investissement. Voir [docs/VIABILITE.md](docs/VIABILITE.md), partie conformité.
+> Wedra fait de la pédagogie, pas du conseil en investissement. Voir [docs/VIABILITE.md](docs/VIABILITE.md), partie conformité.
+
+## Pourquoi « Wedra » ?
+
+Le nom vient de **Wedraogo**, l'écriture d'origine en mooré du nom Ouédraogo : *wed*, le cheval. Dans la tradition mossi, Ouédraogo est l'étalon de la princesse Yennenga, à l'origine du royaume mossi. En finance, l'étalon est aussi la référence qui sert à mesurer la valeur.
 
 ---
 
@@ -49,11 +55,11 @@ Le résultat doit commencer par `v20.9`, `v22` ou plus.
 **Étape 1. Récupérer le code** (remplace `TON-COMPTE` par ton nom d'utilisateur GitHub) :
 
 ```bash
-git clone https://github.com/TON-COMPTE/assistant-brvm.git
+git clone https://github.com/ishaqfadelalexouedraogo-afk/wedra.git
 ```
 
 ```bash
-cd assistant-brvm
+cd wedra
 ```
 
 **Étape 2. Installer les dépendances** (une seule fois, environ 1 minute) :
@@ -111,9 +117,9 @@ La première commande lance les tests automatiques, la seconde vérifie que le s
 ## 3. Mettre le site en ligne (Vercel)
 
 1. Va sur https://vercel.com, connecte-toi avec GitHub.
-2. Clique sur **Add New… → Project**, choisis le dépôt `assistant-brvm`, puis **Import**.
+2. Clique sur **Add New… → Project**, choisis le dépôt `wedra`, puis **Import**.
 3. Ouvre **Environment Variables** et ajoute **les mêmes variables que dans `.env.local`** : `ANTHROPIC_API_KEY`, `SESSION_SECRET`, `ACCESS_CODES`, `ADMIN_TOKEN`, et `CLAUDE_MODEL` si tu veux changer de modèle.
-4. Clique sur **Deploy**. Après 1 à 2 minutes, Vercel te donne l'adresse du site (par exemple `assistant-brvm.vercel.app`).
+4. Clique sur **Deploy**. Après 1 à 2 minutes, Vercel te donne l'adresse du site (par exemple `wedra.vercel.app`).
 
 À chaque fois que tu envoies du code sur GitHub (`git push`), Vercel met le site à jour automatiquement.
 
@@ -141,7 +147,7 @@ La première commande lance les tests automatiques, la seconde vérifie que le s
 ## 5. Organisation du code
 
 ```
-assistant-brvm/
+wedra/
 ├── config/partenaires.json    Liste des partenaires (nom, couleur, quota)
 ├── data/marche/cours.csv      Cours BRVM fournis à l'IA (mis à jour par l'administrateur)
 ├── docs/                      Documentation

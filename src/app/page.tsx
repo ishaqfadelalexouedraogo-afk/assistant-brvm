@@ -19,9 +19,8 @@ export default async function Accueil() {
     <main className="wrap accueil">
       <Bandeau />
       <header>
-        <h1>
-          Assistant <em>BRVM</em>
-        </h1>
+        <h1>Wedra</h1>
+        <p className="slogan">La bourse de l&apos;UEMOA, expliquée simplement.</p>
         <p className="intro">
           Comprendre la bourse, analyser une société cotée et poser tes questions sur l&apos;investissement dans la zone UEMOA.
         </p>

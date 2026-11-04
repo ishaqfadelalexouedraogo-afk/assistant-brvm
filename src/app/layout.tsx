@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Assistant BRVM",
-  description: "Culture boursière et analyse financière pour la zone UEMOA.",
+  title: "Wedra",
+  description: "La bourse de l'UEMOA, expliquée simplement.",
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover" };

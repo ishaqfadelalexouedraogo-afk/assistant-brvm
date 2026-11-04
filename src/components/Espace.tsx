@@ -36,8 +36,8 @@ export default function Espace({
     const h = window.location.hash.slice(1) as Onglet;
     if (ONGLETS.some((o) => o.id === h)) setOnglet(h);
     rafraichir();
-    window.addEventListener("brvm:consommation", rafraichir);
-    return () => window.removeEventListener("brvm:consommation", rafraichir);
+    window.addEventListener("wedra:consommation", rafraichir);
+    return () => window.removeEventListener("wedra:consommation", rafraichir);
   }, [rafraichir]);
 
   function choisir(o: Onglet) {
@@ -55,9 +55,7 @@ export default function Espace({
       <Bandeau />
       <header className="entete">
         <div>
-          <h1>
-            Assistant <em>BRVM</em>
-          </h1>
+          <h1>Wedra</h1>
           <p className="intro">Proposé par {partenaire.nom}</p>
         </div>
         <div className="compte">

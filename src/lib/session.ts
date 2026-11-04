@@ -5,7 +5,7 @@
  */
 import { createHmac, randomUUID, timingSafeEqual } from "node:crypto";
 
-export const NOM_COOKIE = "brvm_session";
+export const NOM_COOKIE = "wedra_session";
 export const DUREE_SESSION_S = 30 * 24 * 3600;
 
 export interface Session {

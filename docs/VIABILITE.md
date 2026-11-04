@@ -4,7 +4,7 @@ Ce document sert à décider des prix, à préparer les échanges avec les parte
 
 ## 1. Le modèle économique : B2B
 
-L'Assistant BRVM n'est pas vendu directement au grand public. Il est vendu à des organisations qui l'offrent à leurs propres utilisateurs.
+Wedra n'est pas vendu directement au grand public. Il est vendu à des organisations qui l'offrent à leurs propres utilisateurs.
 
 | Partenaire | Ce qu'il y gagne | Ce qu'il paie |
 |---|---|---|
